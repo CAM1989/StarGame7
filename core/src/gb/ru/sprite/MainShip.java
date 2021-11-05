@@ -159,6 +159,9 @@ public class MainShip extends Ship {
         v.setZero();
     }
 
-
-
+    public void startNewGame() {
+        hp = 1;
+        pos.x = worldBounds.pos.x;
+        flushDestroy();
+    }
 }
